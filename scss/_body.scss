@@ -1,0 +1,145 @@
+@use 'variables' as *;
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto", sans-serif;
+
+    background-color: $bgColor;
+
+    .form {
+        width: 33.333333%;
+
+        padding: 30px;
+        box-sizing: border-box;
+
+        border-radius: 30px;
+
+        background-color: $bgColorSecond;
+
+        .bar {
+            width: 100%;
+            height: 30px;
+
+            display: flex;
+            gap: 15px;
+
+            margin-bottom: 40px;
+
+            .elem {
+                width: 30px;
+                height: 30px;
+
+                border-radius: 15px;
+            }
+
+            .elem1 {
+                background-color: $error;
+            }
+
+            .elem2 {
+                background-color: $accent;
+            }
+
+            .elem3 {
+                background-color: $aprrove;
+            }
+        }
+
+        .row {
+            width: 100%;
+            height: 50px;
+
+            margin-top: 20px;
+
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+                width: 30px;
+
+                font-size: 45px;
+                font-weight: 500;
+
+                color: $normal;
+
+                cursor: default;
+
+                transition: all 0.5s ease-out;
+            }
+
+            .confirmMessage {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                height: 50px;
+
+                border-radius: 10px;
+
+                background-color: $normal;
+
+                color: $bgColorSecond;
+                font-weight: 900;
+                font-size: 25px;
+                letter-spacing: 5px;
+                
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                cursor: default;
+                user-select: none;
+
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .big {
+            width: 100%;
+            height: 170px !important;
+
+            display: flex;
+            gap: 30px;
+
+            p {
+                width: 30px;
+
+                font-size: 45px;
+                font-weight: 500;
+                
+                color: $normal;
+
+                cursor: default;
+
+                transition: all 0.5s ease-out;
+            }
+
+            .margin {
+                margin-top: 20px;
+            }
+
+            .input {
+                height: 150px !important;
+
+                textarea {
+                    resize: none;
+                }
+
+                label {
+                    position: absolute;
+
+                    margin-top: -110px;
+                }
+            }
+        }
+    }
+}

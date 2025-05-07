@@ -1,0 +1,37 @@
+@use 'variables' as *;
+
+.row:hover > p {
+    color: $accent !important;
+
+    transition: all 0.5s ease-in;
+}
+
+.big:hover > .numbers > p {
+    color: $accent !important;
+
+    transition: all 0.5s ease-in;
+}
+
+.input:hover {
+    border: 3px solid $accent;
+
+    transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+    background-color: $accent !important;
+
+    transition: all 0.5s ease-in;
+}
+
+.success:hover > p {
+    color: $aprrove !important;
+}
+
+.success:hover .numbers > p {
+    color: $aprrove !important;
+}
+
+.successBtn:hover {
+    background-color: $aprrove !important;
+}

@@ -1,0 +1,328 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  background-color: #9da9b3;
+}
+body .form {
+  width: 33.333333%;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #212733;
+}
+body .form .bar {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+body .form .bar .elem {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+body .form .bar .elem1 {
+  background-color: #ff5f5a;
+}
+body .form .bar .elem2 {
+  background-color: #ffbe2e;
+}
+body .form .bar .elem3 {
+  background-color: #2aca44;
+}
+body .form .row {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .form .row p {
+  width: 30px;
+  font-size: 45px;
+  font-weight: 500;
+  color: #3d4752;
+  cursor: default;
+  transition: all 0.5s ease-out;
+}
+body .form .row .confirmMessage {
+  width: 100%;
+}
+body .form .row .btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #3d4752;
+  color: #212733;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+  user-select: none;
+  transition: all 0.5s ease-out;
+}
+body .form .big {
+  width: 100%;
+  height: 170px !important;
+  display: flex;
+  gap: 30px;
+}
+body .form .big p {
+  width: 30px;
+  font-size: 45px;
+  font-weight: 500;
+  color: #3d4752;
+  cursor: default;
+  transition: all 0.5s ease-out;
+}
+body .form .big .margin {
+  margin-top: 20px;
+}
+body .form .big .input {
+  height: 150px !important;
+}
+body .form .big .input textarea {
+  resize: none;
+}
+body .form .big .input label {
+  position: absolute;
+  margin-top: -110px;
+}
+
+.row:hover > p {
+  color: #ffbe2e !important;
+  transition: all 0.5s ease-in;
+}
+
+.big:hover > .numbers > p {
+  color: #ffbe2e !important;
+  transition: all 0.5s ease-in;
+}
+
+.input:hover {
+  border: 3px solid #ffbe2e;
+  transition: all 0.5s ease-in;
+}
+
+.btn:hover {
+  background-color: #ffbe2e !important;
+  transition: all 0.5s ease-in;
+}
+
+.success:hover > p {
+  color: #2aca44 !important;
+}
+
+.success:hover .numbers > p {
+  color: #2aca44 !important;
+}
+
+.successBtn:hover {
+  background-color: #2aca44 !important;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid #3d4752;
+  transition: all 0.3s ease-out;
+}
+.input input {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 900;
+  color: #3d4752;
+  background: none;
+  border: none;
+  transition: all 0.3s ease-out;
+  cursor: default;
+}
+.input textarea {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: 900;
+  color: #3d4752;
+  background: none;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+.input label {
+  position: absolute;
+  margin-left: 20px;
+  font-size: 17px;
+  font-weight: 900;
+  color: #3d4752;
+  transition: all 0.3s ease-out;
+}
+.input input:focus, .input textarea:focus {
+  outline: none;
+  color: #5ac9e0;
+}
+.input input:focus + label {
+  margin-left: 10px;
+  margin-top: -45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #5ac9e0;
+  transition: all 0.3s ease-in;
+}
+.input textarea:focus + label {
+  margin-left: 10px;
+  margin-top: -155px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #5ac9e0;
+  transition: all 0.3s ease-in;
+}
+
+.input:focus-within {
+  border: 3px solid #5ac9e0;
+  transition: all 0.5s ease-in;
+}
+
+.row:focus-within > p {
+  color: #5ac9e0 !important;
+  transition: all 0.5s ease-in;
+}
+
+.row:focus-within > .numbers > p {
+  color: #5ac9e0 !important;
+  transition: all 0.5s ease-in;
+}
+
+.invalidImput {
+  color: #ff5f5a !important;
+  transition: all 0.5s ease-in;
+}
+
+.validImput {
+  color: #2aca44 !important;
+  transition: all 0.5s ease-in;
+}
+
+.invalidLabel {
+  margin-left: 10px;
+  margin-top: -45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #ff5f5a !important;
+  transition: all 0.5s ease-in;
+}
+
+.validLabel {
+  margin-left: 10px;
+  margin-top: -45px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #2aca44 !important;
+  transition: all 0.5s ease-in;
+}
+
+.invalidLabelBig {
+  margin-left: 10px;
+  margin-top: -155px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #ff5f5a !important;
+  transition: all 0.5s ease-in;
+}
+
+.validLabelBig {
+  margin-left: 10px;
+  margin-top: -155px !important;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #212733;
+  color: #2aca44 !important;
+  transition: all 0.5s ease-in;
+}
+
+.validContainer {
+  border: 3px solid #2aca44 !important;
+}
+
+.invalidContainer {
+  border: 3px solid #ff5f5a !important;
+}
+
+/*# sourceMappingURL=style.css.map */
