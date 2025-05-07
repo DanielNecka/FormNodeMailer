@@ -213,6 +213,7 @@ body .form .big .input label {
   width: 100%;
   height: 150px;
   padding-left: 20px;
+  margin-top: 15px;
   box-sizing: border-box;
   font-size: 17px;
   font-weight: 900;

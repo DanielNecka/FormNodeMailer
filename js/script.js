@@ -188,14 +188,16 @@ function showConfirmation(emailInput, themeInput, messageInput) {
 
     returnBtn.addEventListener('click', () => {
         row1.innerHTML = `<p>1</p><div class="input inputEmail"> <input type="text" id="email"><label for="email">email</label></div>`;
+        row1.classList.remove('success');
 
         row2.innerHTML = `<p>2</p><div class="input inputTheme"><input type="text" id="theme"><label for="theme">temat</label></div>`;
+        row2.classList.remove('success');  
 
         row3.innerHTML = `<div class="numbers"><p>3</p><p class="margin">4</p><p class="margin">5</p></div><div class="input inputMessage"><textarea id="message"></textarea><label for="message">wiadomość</label></div>`;
+        row3.classList.remove('success');
 
         row4.innerHTML = `<p>6</p><div class="btn">WYŚLIJ!</div>`;
-
-        row1,row2,row3,row4.classList.remove('success');
+        row4.classList.remove('success');
 
         newLoad();
     });
